@@ -150,10 +150,10 @@ h2{font-size:var(--head);line-height:.95;letter-spacing:-.04em;font-weight:700}
 .eq i:nth-child(4){animation-delay:-.15s;animation-duration:.9s}
 @keyframes eq{from{transform:scaleY(.2)}to{transform:scaleY(1)}}
 .music .lead{margin:24px 0 0;max-width:36ch}
-.platforms{display:grid;gap:8px}
-.platforms a{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:76px;padding:0 24px;background:var(--surface);text-decoration:none;font-weight:700;font-size:var(--lead);transition:background-color .25s,color .25s,padding .35s var(--ease)}
+.platforms{display:grid;gap:6px;max-width:420px}
+.platforms a{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:52px;padding:0 18px;background:var(--surface);text-decoration:none;font-weight:700;font-size:17px;transition:background-color .25s,color .25s,padding .35s var(--ease)}
 .platforms a span{font-weight:500;font-size:var(--small);color:var(--muted);transition:color .25s;text-align:right}
-.platforms a:hover{background:var(--accent);color:var(--accent-ink);padding-left:32px}
+.platforms a:hover{background:var(--accent);color:var(--accent-ink);padding-left:24px}
 .platforms a:hover span{color:var(--accent-ink)}
 
 /* álbum */
@@ -280,6 +280,7 @@ footer small{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   <ul class="socials" aria-label="Redes">
     <li><a href="https://www.instagram.com/djgiuliamad/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5.5" fill="currentColor"/><rect x="5.2" y="5.2" width="13.6" height="13.6" rx="3.6" fill="none" stroke="#131313" stroke-width="1.7"/><circle cx="12" cy="12" r="3.3" fill="none" stroke="#131313" stroke-width="1.7"/><circle cx="16.1" cy="7.9" r="0.95" fill="#131313"/></svg></a></li>
     <li><a href="https://on.soundcloud.com/rQpqAnososXR70FmMu" target="_blank" rel="noopener" aria-label="SoundCloud"><svg viewBox="0 0 30 24" fill="currentColor"><path d="M13 8.6c1.1-.8 2.5-1.3 4-1.3 3.7 0 6.7 2.8 7 6.3.4-.1.8-.2 1.3-.2 2.4 0 4.2 1.9 4.2 4.2S27.7 21.8 25.3 21.8H13z"/><g stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M11.5 9.5v12.3M9.9 10.6v11.2M8.3 11.8v10M6.7 12.6v9.2M5.1 13.6v8.2M3.5 14.8v7M1.9 16.2v5.6M.6 17.6v3"/></g></svg></a></li>
+    <li><a href="https://www.youtube.com/@giuliamad-z1f" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="1" y="4.5" width="22" height="15" rx="4.5" fill="currentColor"/><path d="M9.7 8.6v6.8l5.9-3.4z" fill="#131313"/></svg></a></li>
     <li><a href="mailto:djgiuliamad@gmail.com?subject=Booking%20Giulia%20Mad" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"><rect x="2" y="4.5" width="20" height="15" rx="2"/><path d="M2.6 5.6L12 13l9.4-7.4"/></svg></a></li>
   </ul>
 </header>
@@ -350,12 +351,13 @@ footer small{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   <section class="music" id="escucha" aria-labelledby="escucha-t">
     <div>
       <h2 id="escucha-t" class="rise">Escucha <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span></h2>
-      <p class="lead rise">Sus sesiones y mixes, en SoundCloud. Lo que pasa en cabina, en Instagram.</p>
+      <p class="lead rise">Sus sesiones y mixes, en SoundCloud y YouTube. Lo que pasa en cabina, en Instagram.</p>
     </div>
     <div class="platforms">
-      <a class="rise" href="https://on.soundcloud.com/rQpqAnososXR70FmMu" target="_blank" rel="noopener">SoundCloud <span>Escuchar sets</span></a>
-      <a class="rise" href="https://www.instagram.com/djgiuliamad/" target="_blank" rel="noopener">Instagram <span>@djgiuliamad</span></a>
-      <a class="rise" href="mailto:djgiuliamad@gmail.com?subject=Booking%20Giulia%20Mad">Booking <span>djgiuliamad@gmail.com</span></a>
+      <a class="rise" href="https://on.soundcloud.com/rQpqAnososXR70FmMu" target="_blank" rel="noopener">SoundCloud</a>
+      <a class="rise" href="https://www.youtube.com/@giuliamad-z1f" target="_blank" rel="noopener">YouTube</a>
+      <a class="rise" href="https://www.instagram.com/djgiuliamad/" target="_blank" rel="noopener">Instagram</a>
+      <a class="rise" href="mailto:djgiuliamad@gmail.com?subject=Booking%20Giulia%20Mad">Booking</a>
     </div>
   </section>
 
@@ -380,11 +382,9 @@ footer small{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <h2 id="booking-t" class="rise" style="margin-bottom:20px">Booking</h2>
       <p class="ask rise">Cuéntale la fecha, el sitio y el tipo de fiesta. Giulia te responde.</p>
     </div>
-    <a class="mail rise" href="mailto:djgiuliamad@gmail.com?subject=Booking%20Giulia%20Mad">djgiuliamad@gmail.com</a>
-    <button class="copy" type="button" id="copyMail">Copiar email</button>
     <div class="cols">
       <div><h3>Booking</h3><a href="mailto:djgiuliamad@gmail.com?subject=Booking%20Giulia%20Mad">djgiuliamad@gmail.com</a></div>
-      <div><h3>Redes</h3><a href="https://www.instagram.com/djgiuliamad/" target="_blank" rel="noopener">Instagram</a> · <a href="https://on.soundcloud.com/rQpqAnososXR70FmMu" target="_blank" rel="noopener">SoundCloud</a></div>
+      <div><h3>Redes</h3><a href="https://www.instagram.com/djgiuliamad/" target="_blank" rel="noopener">Instagram</a> · <a href="https://on.soundcloud.com/rQpqAnososXR70FmMu" target="_blank" rel="noopener">SoundCloud</a> · <a href="https://www.youtube.com/@giuliamad-z1f" target="_blank" rel="noopener">YouTube</a></div>
       <div><h3>Base</h3><span>Madrid, España</span></div>
     </div>
   </section>
@@ -449,14 +449,6 @@ footer small{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
     lbt.forEach(function(o){o.setAttribute('aria-pressed',String(o===b))});
     document.querySelectorAll('.bio-txt').forEach(function(x){x.hidden=x.dataset.lang!==b.dataset.lang;x.classList.add('in')});
   })});
-
-  // copiar email
-  var cp=document.getElementById('copyMail');
-  cp.addEventListener('click',function(){
-    var ok=function(){cp.textContent='Copiado';setTimeout(function(){cp.textContent='Copiar email'},1800)};
-    if(navigator.clipboard){navigator.clipboard.writeText('djgiuliamad@gmail.com').then(ok,function(){cp.textContent='Mantén pulsado el email'})}
-    else cp.textContent='Mantén pulsado el email';
-  });
 
   // álbum a pantalla completa
   (function(){
